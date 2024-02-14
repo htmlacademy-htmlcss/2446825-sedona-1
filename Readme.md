@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Гвоздев](https://up.htmlacademy.ru/htmlcss-individual/1/user/2446825).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
