@@ -28,6 +28,7 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   background-color: #756157;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -123,4 +124,13 @@ body {
 .services-description {
   font-size: 18px;
   line-height: 21px;
+}
+
+.hotel-search {
+  text-align: center;
+}
+
+.hotel-search-link {
+  font-size: 20px;
+  line-height: 36px;
 }
