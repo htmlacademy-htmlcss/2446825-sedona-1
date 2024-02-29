@@ -38,3 +38,9 @@ body {
   color: #000000;
   text-decoration: none;
 }
+
+.hero {
+  background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
