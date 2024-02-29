@@ -44,3 +44,17 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+
+.section-title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-description {
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
+}
