@@ -41,6 +41,11 @@ body {
   border-color: #82B3D3;
 }
 
+.button-green {
+  background-color: #7DB54F;
+  border-color: #7DB54F;
+}
+
 .button-transparent {
   background-color: transparent;
   border-color: transparent;
@@ -172,18 +177,6 @@ body {
   color: #FFFFFF;
 }
 
-.catalog-subscribe {
-  background-image: none;
-}
-
-.catalog-subscribe .section-title {
-  color: #000000;
-}
-
-.catalog-subscribe .section-description {
-  color: #333333;
-}
-
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
@@ -240,4 +233,76 @@ body {
   list-style: none;
   font-size: 18px;
   line-height: 23px;
+}
+
+.catalog-products b {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-list {
+  list-style: none;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.product-card-rate {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-ellipses {
+  color: #000000;
+  background-color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.catalog-subscribe {
+  background-image: none;
+}
+
+.catalog-subscribe .section-title {
+  color: #000000;
+}
+
+.catalog-subscribe .section-description {
+  color: #333333;
+}
+
+.field {
+  color: #000000;
+  background-color: #F2F2F2;
+  font-size: 18px;
+  line-height: 24px;
 }
