@@ -38,12 +38,23 @@ body {
   border-color: #82B3D3;
 }
 
+.navigation-list {
+  list-style: none;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+}
+
+.favorites-count {
+  color: #FFFFFF;
+  background-color: #7DB54F;
+  font-size: 10px;
+  line-height: 10px;
 }
 
 .hero {
@@ -168,4 +179,15 @@ body {
 .subscribe-button {
   font-size: 20px;
   line-height: 36px;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.contacts-link-tel {
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
 }
