@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона-Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -30,6 +31,7 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="favorites-count">12</span>
             </a>
           </li>
         </ul>
@@ -51,7 +53,7 @@
         </ul>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="ca-title">Инфраструктура:</legend>
+            <legend class="filter-group-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -74,7 +76,7 @@
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="ca-title">Тип жилья:</legend>
+            <legend class="filter-group-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -96,13 +98,20 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="filter-group-title">Стоимость, ₽:</legend>
+            <label for="price-from">от</label>
+            <input class="field" type="text" value="0" name="price-from" id="price-from">
+            <label for="price-to">до</label>
+            <input class="field" type="text" value="9000" name="price-to" id="price-to">
+          </fieldset>
           <button class="button button-blue" type="submit">Применить</button>
           <button class="button button-transparent" type="reset">Сбросить</button>
         </form>
       </header>
       <section class="catalog-products">
         <h2 class="visually-hidden">Список услуг.</h2>
-        <b>Найдено гостиниц: 38</b>
+        <b>Найдено гостиниц: <span class="search-counter">38</span></b>
         <select class="select-control">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -167,7 +176,7 @@
             <span class="product-card-rate">Рейтинг: 5,0</span>
           </li>
         </ul>
-        <ul class="pagination-list">
+        <ol class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">
               1
