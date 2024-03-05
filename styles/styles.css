@@ -174,10 +174,14 @@ body {
 }
 
 .services-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
   list-style: none;
 }
 
 .services-item {
+  width: 400px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -200,6 +204,7 @@ body {
 }
 
 .hotel-search {
+  padding: 0 304px;
   text-align: center;
 }
 
