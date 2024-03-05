@@ -213,7 +213,13 @@ body {
   line-height: 36px;
 }
 
+.page-footer-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .subscribe {
+  padding: 0 258px;
   color: #FFFFFF;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
@@ -230,15 +236,28 @@ body {
   line-height: 36px;
 }
 
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
 .social-list {
   list-style: none;
+  max-width: 190px;
 }
 
 .contacts-link-tel {
+  width: 720px;
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+  text-align: center;
+}
+
+.contacts-link-logo {
+  width: 115px;
 }
 
 /* Страница каталога */
