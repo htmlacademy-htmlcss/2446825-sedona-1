@@ -60,8 +60,27 @@ body {
   border-color: transparent;
 }
 
+.main-nav {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  margin-right: 30px;
+}
+
 .navigation-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  width: 470px;
+}
+
+.navigation-user {
+  max-width: 135px;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 .navigation-link {
