@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+   <div class="body-container">
     <header class="page-header">
       <nav class="main-nav">
         <a class="navigation-logo" href="index.html">
@@ -38,7 +39,7 @@
         <a class="button button-brown" href="#">Хочу сюда!</a>
       </nav>
     </header>
-    <main class="catalog-main">
+    <main class="catalog-main main-container">
       <header class="catalog-header">
         <h1 class="catalog-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -98,7 +99,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group catalog-filter-group-price">
             <legend class="filter-group-title">Стоимость, ₽:</legend>
             <label for="price-from">от</label>
             <input class="field" type="text" value="0" name="price-from" id="price-from">
@@ -111,21 +112,31 @@
       </header>
       <section class="catalog-products">
         <h2 class="visually-hidden">Список услуг.</h2>
+        <div class="sort-wrapper">
         <b>Найдено гостиниц: <span class="search-counter">38</span></b>
         <select class="select-control">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <a href="#" class="view-icon view-icon-current">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="view-icon">
-          <span class="visually-hidden">Показать лентой</span>
-        </a>
-        <a href="#" class="view-icon">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <ul class="view-icon-list">
+          <li class="view-icon-item">
+            <a href="#" class="view-icon view-icon-current">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+          </li>
+          <li class="view-icon-item">
+            <a href="#" class="view-icon">
+              <span class="visually-hidden">Показать лентой</span>
+            </a>
+          </li>
+          <li class="view-icon-item">
+            <a href="#" class="view-icon">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+          </li>
+        </ul>
+        </div>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -240,10 +251,11 @@
           </li>
         </ul>
         <a class="contacts-link contacts-link-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="contacts-link contacts-link-logo">
+        <a class="contacts-link contacts-link-logo" href="#">
           <img class="footer-logo" src="images/htmlacademy-logo.svg" width="115" height="33" alt="Логотип htmlacademy">
         </a>
       </section>
+    </div>
     </footer>
   </body>
 </html>

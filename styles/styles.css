@@ -15,11 +15,22 @@
 }
 
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
+}
+
+.body-container {
+  background-color: #FFFFFF;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -52,8 +63,27 @@ body {
   border-color: transparent;
 }
 
+.main-nav {
+  display: flex;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  margin-right: 30px;
+}
+
 .navigation-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  width: 470px;
+}
+
+.navigation-user {
+  max-width: 135px;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 .navigation-link {
@@ -69,6 +99,10 @@ body {
   background-color: #7DB54F;
   font-size: 10px;
   line-height: 10px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .hero {
@@ -94,10 +128,15 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-item {
+  width: 400px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -107,6 +146,7 @@ body {
 }
 
 .advantages-item-full {
+  width: 1200px;
   background-color: #82B3D3;
 }
 
@@ -132,10 +172,14 @@ body {
 }
 
 .services-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
   list-style: none;
 }
 
 .services-item {
+  width: 400px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -158,6 +202,7 @@ body {
 }
 
 .hotel-search {
+  padding: 0 304px;
   text-align: center;
 }
 
@@ -167,6 +212,7 @@ body {
 }
 
 .subscribe {
+  padding: 0 258px;
   color: #FFFFFF;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
@@ -183,20 +229,34 @@ body {
   line-height: 36px;
 }
 
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
 .social-list {
   list-style: none;
+  max-width: 190px;
 }
 
 .contacts-link-tel {
+  width: 720px;
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+  text-align: center;
+}
+
+.contacts-link-logo {
+  width: 115px;
 }
 
 /* Страница каталога */
 
 .catalog-header {
+  padding: 0 70px;
   color:#FFFFFF;
   background-color: #000000;
   background-image: url("../images/filter-background.jpg");
@@ -224,6 +284,19 @@ body {
   text-decoration: none;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  width: 150px;
+  margin-right: 70px;
+}
+
+.catalog-filter-group-price {
+  margin-left: auto;
+}
+
 .filter-group-title {
   font-size: 20px;
   line-height: 24px;
@@ -231,6 +304,8 @@ body {
 }
 
 .catalog-filter-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
   font-size: 18px;
   line-height: 23px;
@@ -240,7 +315,17 @@ body {
   font-weight: 700;
 }
 
+.catalog-products {
+  padding: 0 70px;
+}
+
+.sort-wrapper {
+  display: flex;
+}
+
 .catalog-products b {
+  width: 360px;
+  margin-right: auto;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -249,14 +334,36 @@ body {
 }
 
 .select-control {
+  width: 292px;
+  margin-right: 70px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
-.product-list {
+.view-icon-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.product-card {
+  width: 300px;
+  padding: 0 20px;
+  margin-right: 20px;
+}
+
+.product-card:nth-child(3n) {
+  margin-right: 0;
 }
 
 .product-card-link {
@@ -276,7 +383,15 @@ body {
 }
 
 .pagination-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.pagination-item {
+  width: 60px;
+  margin-right: 8px;
 }
 
 .pagination-link {
