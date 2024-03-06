@@ -14,20 +14,23 @@
   font-display: swap;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
+}
+
+.body-container {
+  background-color: #FFFFFF;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -62,7 +65,7 @@ body {
 
 .main-nav {
   display: flex;
-  width: 1060px;
+  padding: 0 70px;
   margin: 0 auto;
 }
 
@@ -100,11 +103,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .hero {
@@ -211,11 +209,6 @@ body {
 .hotel-search-link {
   font-size: 20px;
   line-height: 36px;
-}
-
-.page-footer-container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .subscribe {
