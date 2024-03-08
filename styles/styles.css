@@ -56,26 +56,23 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
 }
 
 .button-brown {
   background-color: #756157;
-  border-color: #756157;
 }
 
 .button-blue {
   background-color: #82B3D3;
-  border-color: #82B3D3;
 }
 
 .button-green {
   background-color: #7DB54F;
-  border-color: #7DB54F;
 }
 
 .button-transparent {
   background-color: transparent;
-  border-color: transparent;
 }
 
 .main-nav {
@@ -107,6 +104,7 @@ body {
 }
 
 .navigation-link {
+  outline: 1px solid #000000;
   display: block;
   padding: 20px 16px;
   font-size: 20px;
@@ -307,7 +305,7 @@ body {
 }
 
 .subscribe {
-  padding: 0 258px;
+  padding: 96px 258px 104px;
   color: #FFFFFF;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
@@ -317,6 +315,11 @@ body {
 
 .subscribe .section-title {
   color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.subscribe .section-description {
+  margin-bottom: 54px;
 }
 
 .subscribe-button {
@@ -327,15 +330,34 @@ body {
 .contacts {
   display: flex;
   justify-content: space-between;
-  padding: 0 70px;
+  align-items: center;
+  padding: 40px 70px 30px;
 }
 
 .social-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
-  max-width: 190px;
+}
+
+.social-item {
+  width: 47px;
+  height: 40px;
+  outline: 1px solid #000000;
+}
+
+.social-link {
+  display: block;
+  min-width: 18px;
+  min-height: 14px;
+  padding: 10px;
 }
 
 .contacts-link-tel {
+  display: block;
+  padding: 5px 0;
   width: 720px;
   color: #000000;
   font-size: 40px;
