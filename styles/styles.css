@@ -47,6 +47,8 @@ body {
 }
 
 .button {
+  display: inline-block;
+  padding: 8px 0;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -286,11 +288,20 @@ body {
 }
 
 .hotel-search {
-  padding: 0 304px;
+  padding: 96px 304px 0;
   text-align: center;
 }
 
+.hotel-search .section-title {
+  margin-bottom: 20px;
+}
+
+.hotel-search .section-description {
+  margin-bottom: 54px;
+}
+
 .hotel-search-link {
+  margin-bottom: 96px;
   font-size: 20px;
   line-height: 36px;
 }
