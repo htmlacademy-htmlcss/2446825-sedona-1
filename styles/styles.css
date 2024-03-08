@@ -373,7 +373,7 @@ body {
 /* Страница каталога */
 
 .catalog-header {
-  padding: 0 70px;
+  padding: 35px 70px 70px;
   color:#FFFFFF;
   background-color: #000000;
   background-image: url("../images/filter-background.jpg");
@@ -382,32 +382,50 @@ body {
 }
 
 .catalog-header-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
   list-style: none;
 }
 
 .breadcrumbs-item {
+  outline: 1px solid #fff;
+  margin-right: 28px;
   font-size: 16px;
   line-height: 21px;
 }
 
 .breadcrumbs-link {
+  display: block;
+  min-width: 12px;
+  min-height: 12px;
   color: #ffffff;
   text-decoration: none;
 }
 
 .catalog-filter {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-group {
   width: 150px;
+  padding: 0;
+  margin: 0;
   margin-right: 70px;
+  border: none;
 }
 
 .catalog-filter-group-price {
@@ -415,6 +433,7 @@ body {
 }
 
 .filter-group-title {
+  margin-bottom: 32px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -426,6 +445,10 @@ body {
   list-style: none;
   font-size: 18px;
   line-height: 23px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .catalog-filter-group .field {
