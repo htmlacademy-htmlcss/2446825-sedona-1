@@ -206,6 +206,8 @@ body {
 }
 
 .advantages-title {
+  display: inline-block;
+  width: 172px;
   padding: 0;
   margin: 0;
   margin-bottom: 62px;
@@ -319,6 +321,8 @@ body {
 }
 
 .subscribe .section-description {
+  display: inline-block;
+  width: 475px;
   margin-bottom: 54px;
 }
 
@@ -456,11 +460,13 @@ body {
 }
 
 .catalog-products {
-  padding: 0 70px;
+  padding: 50px 70px 60px;
 }
 
 .sort-wrapper {
   display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .catalog-products b {
@@ -483,12 +489,6 @@ body {
 }
 
 .view-icon-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.product-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -496,21 +496,53 @@ body {
   list-style: none;
 }
 
-.product-card {
-  width: 300px;
-  padding: 0 20px;
-  margin-right: 20px;
+.view-icon {
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
-.product-card:nth-child(3n) {
-  margin-right: 0;
+.view-icon-current {
+  border-color: #000000;
+}
+
+.view-icon-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 80px;
+  list-style: none;
+}
+
+.product-card {
+  box-sizing: border-box;
+  width: 340px;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .product-card-link {
   text-decoration: none;
 }
 
+.product-card-image {
+  margin-bottom: 16px;
+}
+
 .product-card-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
   color: #000000;
   font-size: 24px;
   line-height: 28px;
@@ -524,6 +556,7 @@ body {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -532,15 +565,22 @@ body {
 .pagination-item {
   width: 60px;
   margin-right: 8px;
+  text-align: center;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 0;
   color: #FFFFFF;
   background-color: #82B3D3;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .pagination-current {
@@ -553,6 +593,7 @@ body {
   background-color: #FFFFFF;
   font-size: 22px;
   line-height: 26px;
+  padding: 17px 0;
 }
 
 .catalog-subscribe {
