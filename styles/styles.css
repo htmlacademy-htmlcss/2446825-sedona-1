@@ -503,22 +503,41 @@ body {
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 47px;
   height: 40px;
-  outline: 1px solid #000000;
 }
 
 .social-link {
-  display: block;
-  min-width: 18px;
-  min-height: 14px;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:focus-visible {
+  outline: none;
+}
+
+.social-icon {
+  fill: #83B3D3;
+}
+
+.social-link:hover svg,
+.social-link:focus-visible svg {
+  fill: #68A2CA;
+}
+
+.social-link:active svg {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .contacts-link-tel {
@@ -532,8 +551,35 @@ body {
   text-align: center;
 }
 
+.contacts-link-tel:hover,
+.contacts-link-tel:focus-visible {
+  color: rgba(117, 97, 87, 1);
+  outline: none;
+}
+
+.contacts-link-tel:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .contacts-link-logo {
   width: 115px;
+}
+
+.contacts-link-logo:focus-visible {
+  outline: none;
+}
+
+.contacts-logo-icon {
+  fill: #000000;
+}
+
+.contacts-link-logo:hover .contacts-logo-icon,
+.contacts-link-logo:focus-visible .contacts-logo-icon {
+  fill: #756157;
+}
+
+.contacts-link-logo:active .contacts-logo-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Страница каталога */
