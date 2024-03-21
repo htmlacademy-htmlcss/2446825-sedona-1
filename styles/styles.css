@@ -59,9 +59,27 @@ body {
   text-decoration: none;
   text-align: center;
   border: none;
+  cursor: pointer;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button-brown {
+  background-color: #756157;
+}
+
+.button-brown:hover,
+.button-brown:focus-visible {
+  background-color: #615048;
+}
+
+.button-brown:active {
   background-color: #756157;
 }
 
@@ -69,12 +87,46 @@ body {
   background-color: #82B3D3;
 }
 
+.button-blue:hover,
+.button-blue:focus-visible {
+  background-color: #68A2CA;
+}
+
+.button-blue:active {
+  background-color: #82B3D3;
+}
+
 .button-green {
+  background-color: #7DB54F;
+}
+
+.button-green:hover,
+.button-green:focus-visible {
+  background-color: #6C9E42;
+}
+
+.button-green:active {
   background-color: #7DB54F;
 }
 
 .button-transparent {
   background-color: transparent;
+}
+
+.button-transparent:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-transparent:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+.button-transparent:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-header {
+  position: relative;
 }
 
 .main-nav {
@@ -107,7 +159,7 @@ body {
 }
 
 .navigation-link {
-  outline: 1px solid #000000;
+
   display: block;
   padding: 20px 16px;
   font-size: 20px;
@@ -305,6 +357,7 @@ body {
 }
 
 .hotel-search-link {
+  padding: 8px 50px;
   margin-bottom: 96px;
   font-size: 20px;
   line-height: 36px;
@@ -424,7 +477,6 @@ body {
 }
 
 .breadcrumbs-item {
-  outline: 1px solid #fff;
   margin-right: 28px;
   font-size: 16px;
   line-height: 21px;
