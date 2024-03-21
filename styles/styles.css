@@ -305,6 +305,7 @@ body {
 }
 
 .advantages-wrapper {
+  position: relative;
   align-self: center;
   padding: 0 85px;
 }
@@ -322,6 +323,16 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-title::after {
+  position: absolute;
+  right: 170px;
+  top: 85px;
+  left: 170px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+}
+
 .advantages-description {
   padding: 0;
   margin: 0;
@@ -331,6 +342,10 @@ body {
 
 .advantages-item-full .advantages-title {
   color: #FFFFFF;
+}
+
+.advantages-item-full .advantages-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-item-full .advantages-description {
@@ -375,6 +390,7 @@ body {
 }
 
 .services-title {
+  position: relative;
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
@@ -383,6 +399,31 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.services-title::before {
+  position: absolute;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 77px;
+  right: 77px;
+  bottom: 58px;
+  width: 75px;
+  height: 76px;
+  content: "";
+}
+
+.services-title-house::before {
+  background-image: url("../images/icons/advantage-icon-home.svg");
+}
+
+.services-title-food::before {
+  background-image: url("../images/icons/advantage-icon-food.svg");
+}
+
+.services-title-souvenire::before {
+  background-image: url("../images/icons/advantage-icon-prize.svg");
 }
 
 .services-description {
