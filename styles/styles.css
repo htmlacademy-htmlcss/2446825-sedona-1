@@ -159,7 +159,7 @@ body {
 }
 
 .navigation-link {
-
+  position: relative;
   display: block;
   padding: 20px 16px;
   font-size: 20px;
@@ -169,17 +169,66 @@ body {
   text-decoration: none;
 }
 
+.navigation-link:hover {
+  box-shadow: inset 0 0 5px 3px #83B3D3;
+}
+
+.navigation-link:active {
+  box-shadow: inset 0 0 0 3px #83B3D3;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 16px;
+  bottom: -1px;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
 .navigation-user .navigation-link {
-  padding: 22px 12px;
-  width: 20px;
-  height: 20px;
+  display: block;
+  width: 44px;
+  height: 64px;
+  padding: 0;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.navigation-link-search {
+  background-image: url("../images/icons/icon-search.svg");
+}
+
+.navigation-link-favourites {
+  background-image: url("../images/icons/icon-heart.svg");
 }
 
 .favorites-count {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px 0;
   color: #FFFFFF;
   background-color: #7DB54F;
   font-size: 10px;
   line-height: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.favorites-count:hover {
+  background-color: #6C9E42;
+}
+
+.main-nav .button {
+  padding: 8px 34px;
 }
 
 .main-container {
