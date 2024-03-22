@@ -118,7 +118,8 @@ body {
 }
 
 .button-transparent:focus-visible {
-  outline: 3px solid #83B3D3;
+  outline: none;
+  box-shadow: inset 0 0 0 3px #83B3D3;
 }
 
 .button-transparent:active {
@@ -185,6 +186,11 @@ body {
 
 .navigation-link:hover {
   box-shadow: inset 0 0 5px 3px #83B3D3;
+}
+
+.navigation-link:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 5px 3px #000000;
 }
 
 .navigation-link:active {
@@ -637,17 +643,51 @@ body {
 }
 
 .breadcrumbs-item {
+  position: relative;
   margin-right: 28px;
   font-size: 16px;
   line-height: 21px;
 }
 
+.breadcrumbs-item::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 5px;
+  right: -18px;
+  width: 7px;
+  height: 10px;
+  background-image: url("../images/icons/icon-breadcumps.svg");
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
+}
+
 .breadcrumbs-link {
   display: block;
-  min-width: 12px;
-  min-height: 12px;
+  min-width: 13px;
+  min-height: 21px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.breadcrumbs-link-home {
+  background-image: url("../images/icons/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .catalog-filter {
@@ -708,6 +748,14 @@ body {
 
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
 }
 
 .catalog-filter-group .field {
