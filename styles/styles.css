@@ -142,6 +142,7 @@ body {
 
 .page-header {
   position: relative;
+  z-index: 1;
 }
 
 .main-nav {
@@ -256,12 +257,27 @@ body {
 }
 
 .hero {
-  padding-top: 51px;
-  padding-bottom: 82px;
+  position: relative;
+  padding: 51px 371px 82px;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   text-align: center;
+}
+
+.hero::after {
+  position: absolute;
+  left: 0;
+  top: 428px;
+  content: "";
+  width: 1200px;
+  height: 57px;
+  background-image: url("../images/index-background-mask.svg");
+  background-repeat: no-repeat;
+}
+
+.title-logo {
+  display: block;
 }
 
 .section-title {
@@ -883,6 +899,7 @@ body {
 }
 
 .product-list {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 342px);
   gap: 18px 17px;
@@ -890,6 +907,16 @@ body {
   margin: 0;
   margin-bottom: 80px;
   list-style: none;
+}
+
+.product-list::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  height: 1px;
+  background-color: #E6E6E6;
+  content: "";
 }
 
 .product-card {
@@ -929,8 +956,13 @@ body {
   justify-self: end;
 }
 
+.hotel-rate {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .product-card-rate {
-  grid-column: 2;
   font-size: 16px;
   line-height: 20px;
   padding: 9px 0 8px;
