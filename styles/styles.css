@@ -734,9 +734,8 @@ body {
 
 .price-form-wrapper {
   display: flex;
-  align-items: flex-start;
   gap: 2px;
-  margin-left: auto;
+  margin-bottom: 44px;
 }
 
 .field-wrapper {
@@ -840,6 +839,12 @@ body {
   font-weight: 700;
 }
 
+.field-price::-webkit-outer-spin-button,
+.field-price::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .catalog-filter-group .field-price-from {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -848,6 +853,56 @@ body {
 .catalog-filter-group .field-price-to {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+/* Range Bar */
+
+.range-scale {
+  position: relative;
+  width: 288px;
+  height: 4px;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus-visible {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83B3D3;
 }
 
 .filter-button-wrapper {
