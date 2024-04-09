@@ -1159,3 +1159,239 @@ body {
 .catalog-subscribe .section-description {
   color: #333333;
 }
+
+
+/* Модальное окно */
+
+.modal-container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  padding: 64px 70px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.modal-search {
+  width: 577px;
+  border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  padding: 16px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-close-button:focus-visible {
+  background-color: rgba(230, 230, 230, 1);
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.modal-close-button:active svg {
+  opacity: 0.3;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal-field-group-date {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 137px 440px;
+  align-items: center;
+}
+
+.date-description {
+  grid-column: 2 / 3;
+}
+
+.modal-field-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000
+}
+
+.modal-field {
+  width: 100%;
+  padding: 11px 20px;
+  margin-bottom: 4px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color:#000000;
+}
+
+.modal-field-date {
+  padding-right: 45px;
+}
+
+.modal-field-date:focus-visible {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+  box-shadow: none;
+}
+
+.modal-field-date:active {
+  box-shadow: inset 0 0 0 2px #000000;
+}
+
+.date-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  right: 20px;
+  background-image: url("../images/icons/icon-date.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  content: "";
+}
+
+.date-description {
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  margin-bottom: 23px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.date-warning {
+  color: #FF5757;
+}
+
+.modal-field-group-people {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-field-group-people .modal-field-title {
+  margin-right: 46px;
+}
+
+.modal-field-title.modal-field-title-child {
+  margin-right: 82px;
+}
+
+.modal-field-people-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.field-people-button {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 14px 10px ;
+  width: 40px;
+  height: 48px;
+  background-color: #F2F2F2;
+  border: none;
+  cursor: pointer;
+}
+
+.field-people-button:focus-visible {
+  outline: none;
+}
+
+.minus-button {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.plus-button {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+}
+
+.field-people-button svg {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.field-people-button:hover svg {
+  fill: #000000;
+}
+
+.field-people-button:focus-visible svg {
+  fill: #000000;
+  border-radius: 4px;
+  outline: 3px solid #82B3D3;
+}
+
+.field-people-button:active svg {
+  fill: #000000;
+  opacity: 0.2;
+}
+
+.modal-field-people {
+  box-sizing: border-box;
+  width: 31px;
+  line-height: 20px;
+  padding: 14px 4px;
+  text-align: center;
+  margin: 0;
+  border-radius: 0;
+}
+
+.modal-field-people:focus-visible {
+  outline: none;
+}
+
+.modal-field-people::-webkit-outer-spin-button,
+.modal-field-people::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.modal-form .button {
+  width: 100%;
+  padding: 18px 0;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 10px;
+}
+
