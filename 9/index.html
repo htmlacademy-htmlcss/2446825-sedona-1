@@ -171,7 +171,7 @@
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M17 4.292 15.708 3 10 8.708 4.292 3 3 4.292 8.708 10 3 15.708 4.292 17 10 11.292 15.708 17 17 15.708 11.292 10 17 4.292Z"
@@ -182,15 +182,13 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="modal-field-group-date">
-              <label class="modal-field-title" for="incoming-date">Дата заезда:</label>
+              <label class="modal-field-title date-title" for="incoming-date">Дата заезда:</label>
               <input class="field modal-field modal-field-date" type="text" name="incoming-date" id="incoming-date" value="27 апреля 2020" required>
-              <span class="date-icon"></span>
               <span class="date-description date-warning">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="modal-field-group-date">
-              <label class="modal-field-title" for="outcoming-date">Дата выезда:</label>
+              <label class="modal-field-title date-title" for="outcoming-date">Дата выезда:</label>
               <input class="field modal-field modal-field-date" type="text" name="outcoming-date" id="outcoming-date" value="1 сентября 2023" required>
-              <span class="date-icon"></span>
               <span class="date-description date-accept">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="modal-field-group-people">
