@@ -1174,9 +1174,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1236,6 +1236,18 @@ body {
   align-items: center;
 }
 
+.date-title::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  right: 20px;
+  background-image: url("../images/icons/icon-date.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
 .date-description {
   grid-column: 2 / 3;
 }
@@ -1271,19 +1283,6 @@ body {
 
 .modal-field-date:active {
   box-shadow: inset 0 0 0 2px #000000;
-}
-
-.date-icon {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 14px;
-  right: 20px;
-  background-image: url("../images/icons/icon-date.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  content: "";
 }
 
 .date-description {
